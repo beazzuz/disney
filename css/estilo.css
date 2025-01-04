@@ -1,0 +1,761 @@
+﻿
+@font-face {
+    font-family: 'disneyfont';
+    src: url('../fonts/walter-webfont.woff2') format('woff2'),
+         url('../fonts/walter-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+
+	
+ 
+}
+
+hr {
+  border: 0;
+  height: 2px;
+  background-image: linear-gradient(to right, transparent, #CCC, transparent);  
+}
+.menu h5 a{
+	display: inline-block;
+	font-family: disneyfont;
+	color:white;
+	font-size: 40px;
+    margin: 10px auto;
+	text-align:center;
+	width:100%;
+    
+}
+.menu h5 a:hover{
+	color: #DAA520;
+	transition: 0.5;
+}
+
+/*navegação*/
+
+nav {
+
+	justify-content: space-between; 
+	margin: auto 80px;	
+	
+}
+nav p{
+	display: inline-block;
+	font-family: disneyfont;
+	color:white;
+	font-size: 40px;
+    margin-top: 10px;
+    
+}
+nav p:hover{
+	color: #DAA520;
+	transition: 0.5;
+}
+
+nav ul{
+	
+	float:right;
+	
+}
+nav li{
+	display: inline-block;
+	list-style: none;
+	padding: 10px;
+}
+
+nav ul li a{
+	 
+	text-align: center;
+	color:white;
+	text-decoration: none;
+	font-family: Amatic SC ;
+	font-size: 25px;
+}
+
+a:hover{
+	color: #DAA520;
+	transition: 0.5;
+}
+
+header{
+    height: 100vh;
+	background: no-repeat center/cover url('../img/ca.jpg');
+	
+}
+.menu{
+ height:100px;
+background:url('../img/m.png');
+margin-top:-15px;
+	
+}
+
+
+/*botão para baixo*/
+.arrow{
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.arrow span{
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 3px solid #4169E1;
+    border-right: 3px solid #4169E1;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+
+.arrow span:nth-child(2){
+    animation-delay: -0.4s;
+}
+@keyframes animate {
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px,-20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+    }
+}
+
+/*sobre*/
+
+.sobre {
+	height:500px;
+	display:flex;
+	padding:0;
+margin-top:-40px;
+
+	
+}
+.sobre2 {
+	height:480px;
+	display:flex;
+	padding:0;
+margin:40px;
+
+	
+}
+
+.sobre2 .sobre-img{
+	width: 530px;
+	height: 350px;
+	margin: 50px 0 0 50px;
+	
+}
+
+.sobre .sobre-img{
+	width: 592px;
+
+	height: 350px;
+	margin: 100px 0 0 50px;
+	
+	
+}
+ 
+.sobre-text {
+    text-align:justify;
+	margin: 80px 0 0 80px;
+	width: 592px;
+	height: 350px;
+	padding: 0;
+	
+}
+.sobre-text  p{
+	font-size:17px;
+
+	color: #696969;
+	font-family: Comic Sans MS;
+}
+
+.sobre2 h4{
+	
+	margin:auto;
+font-size:20px;
+	padding:0;
+	color:#DAA520;
+	font-family: disneyfont;
+	
+}
+
+
+ .sobre, .sobre2 h1{
+	margin-bottom:0;
+	padding:0;
+	color:#041577;
+	font-family: disneyfont;
+	
+}
+
+
+.sobre .sobre-text p span {
+	color:#DAA520;
+	font-family: disneyfont;
+}
+
+
+.botao{
+    background-color: #041577;
+    color: white;
+    font-family: Comic Sans MS;
+	font-size:15px;
+	border-radius: 30px;
+	padding: 8px 15px; 
+	text-decoration: none;
+	
+}
+
+
+/*space*/
+
+.space{
+margin-top:100px;
+	height: 700px;
+	
+}
+.space h1{
+	margin-bottom:0;
+	padding:0;
+	color:#041577;
+	font-family: disneyfont;
+	font-size: 30px;
+	width:100%;
+	text-align:center;
+	
+}
+
+.space .cards {
+	display:flex;
+
+	height: 180px;
+	width: 75%;
+	margin:50px auto;
+	justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+	
+	
+}
+
+
+.card img{
+	margin:20px auto;
+	width:200px;
+	height:144px;
+	
+}
+
+.space-text{
+width:70%;
+    height: 100px;
+	margin: auto;
+}
+
+.space  p{
+	
+	font-size:20px;
+	color: #696969;
+	font-family: Comic Sans MS;
+	text-align:center;
+	
+}
+.space p span {
+	color:#DAA520;
+	font-family: disneyfont;
+	
+}
+
+
+
+.container h2, .container2 h2, .container3 h2{
+	
+	padding:0;
+	color:white;
+	font-family: Comic Sans MS;
+	font-size: 30px;
+	width:100%;
+	text-align:center;
+	
+}
+form p {
+	font-size:30px;
+	color: white;
+font-family: amatic sc;
+}
+form p a {
+	
+	font-size:18px;
+	color: white;
+font-family: amatic sc;
+}
+
+.lab0{
+	
+color:white;
+text-align:center;
+display:inline-block;
+font-size:25px;
+font-family: amatic sc;
+width:150px;
+}
+.quest{
+	color:white;
+display:inline-block;
+font-size:25px;
+font-family: amatic sc;
+width:100%;
+padding:10px;
+padding-left:30px;
+}
+
+
+.input{
+
+	width:250px;
+	margin: 15px auto;
+}
+.container {
+	width:550px;
+	height:590px;
+	background:rgba(0, 0, 0, 0.81);
+	align-items: center;
+	text-align:center;
+	margin: 20px auto;
+}
+.container2 {
+	height:450px;
+	width:550px;
+   background:rgba(0, 0, 0, 0.81);
+	 align-items: center;
+	 text-align:center;
+	 margin: 20px auto;
+	
+
+}
+
+.container3 {
+	width:550px;
+	height:1900px;
+	background:rgba(0, 0, 0, 0.81);
+   
+	margin: 20px auto;
+	color:white;
+}
+.container3 p{
+	text-align:center;
+}
+
+.container4 {
+	height: 650px;
+    width: 750px;
+    padding: 20px;
+    background: red;
+    align-items: center;
+    text-align: center;
+    margin: 100px auto;
+    font-family: Comic Sans MS;
+}
+}
+.botao1{
+    background-color: #041577;
+    color: white;
+    font-family: Comic Sans MS;
+	font-size:15px;
+	width:100px;
+	padding: 8px 15px; 
+	text-decoration: none;
+	
+}
+.botao2{
+    background-color: #041577;
+    color: white;
+    font-family: Comic Sans MS;
+	font-size:15px;
+	width:200px;
+	padding: 8px 15px; 
+	text-decoration: none;
+	
+}
+.botao3{
+    background-color: #041577;
+    color: white;
+    font-family: Comic Sans MS;
+	font-size:15px;
+	width:200px;
+	padding: 8px 15px; 
+	text-decoration: none;
+	margin-left:160px;
+	
+}
+
+/*cards2*/
+.card-corpo{
+	width:100%;
+	height:400px;
+	
+	align-items:center;
+	
+}
+.card-corpo h1{
+	margin-bottom:0;
+	padding:0;
+	color:#041577;
+	font-family: disneyfont;
+	font-size: 30px;
+	width:100%;
+	text-align:center;
+	margin-top:100px;
+	
+}
+.wrapper{
+   
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+	padding:50px;
+}
+.card1{
+	
+    flex: 1;
+    flex-basis: 200px;
+    flex-grow: 0;
+    height: 250px;
+    background: #fff;
+    border: 2px solid #fff;
+    box-shadow: 0px 4px 7px rgba(0,0,0,.5);
+    cursor: pointer;
+    transition: all .5s cubic-bezier(.8,.5,.2,1.4);
+    overflow: hidden;
+    position: relative;
+}
+.card1 img{
+    width: 200px;
+    height:250px;
+    transition: all .5s cubic-bezier(.8,.5,.2,1.4);
+}
+.descriptions{
+    position: absolute;
+    top:0px;
+    left:0px;
+    background-color: rgba(255,255,255,.7);
+    width:100%;
+    height:100%;
+    transition: all .7s ease-in-out;
+    padding: 20px;
+    box-sizing: border-box;
+    clip-path: circle(0% at 100% 100%);
+}
+.card1:hover .descriptions{
+    left:0px;
+    transition: all .7s ease-in-out;
+    clip-path: circle(75%);
+}
+.card1:hover{
+    transition: all .5s cubic-bezier(.8,.5,.2,1.4);
+    box-shadow: 0px 2px 3px rgba(0,0,0,.3);
+    transform: scale(.97);
+}
+.card1:hover img{
+    transition: all .5s cubic-bezier(.8,.5,.2,1.4);
+    transform: scale(1.6) rotate(20deg);
+    filter: blur(3px);
+}
+.card1 h1{
+   
+    margin: 0px;
+	color:#026ed4;
+	font-family: disneyfont;
+	font-size: 12px;
+}
+.card1 p{
+    
+   font-size:14px;
+	color: #041577;
+font-family: Comic Sans MS ;
+
+
+}
+
+/*space2*/
+
+
+.space2{
+width:100%;
+	height:800px;
+	align-items:center;
+
+	
+}
+.space2 h1{
+	margin-bottom:0;
+	padding:0;
+	color:#041577;
+	font-family: disneyfont;
+	font-size: 30px;
+	width:100%;
+	text-align:center;
+	
+}
+
+
+.wrapper2{
+	
+  
+    width:100%;
+	margin-top:100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+	padding:10px;
+}
+.wrapper3{
+	
+  
+    width:100%;
+	margin-top:5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+	padding:10px;
+}
+.card-2{
+	margin-left:15px;
+    flex: 1;
+    flex-basis: 310px;
+    flex-grow: 0;
+    height: 205px;
+    background: #fff;
+    border: 2px solid #fff;
+    box-shadow: 0px 4px 7px rgba(0,0,0,.5);
+    cursor: pointer;
+    transition: all .5s cubic-bezier(.8,.5,.2,1.4);
+    overflow: hidden;
+    position: relative;
+}
+.card-2 img{
+	
+    width: 305px;
+    height:200px;
+    transition: all .5s cubic-bezier(.8,.5,.2,1.4);
+}
+.descriptions2{
+    position: absolute;
+    top:0px;
+    left:0px;
+    background-color: rgba(255,255,255,.7);
+    width:100%;
+    height:100%;
+    transition: all .7s ease-in-out;
+    padding: 20px;
+    box-sizing: border-box;
+    clip-path: circle(0% at 100% 100%);
+}
+.card-2:hover .descriptions2{
+    left:0px;
+    transition: all .7s ease-in-out;
+    clip-path: circle(75%);
+}
+.card-2:hover{
+    transition: all .5s cubic-bezier(.8,.5,.2,1.4);
+    box-shadow: 0px 2px 3px rgba(0,0,0,.3);
+    transform: scale(.97);
+}
+.card-2:hover img{
+    transition: all .5s cubic-bezier(.8,.5,.2,1.4);
+    transform: scale(1.6) rotate(20deg);
+    filter: blur(3px);
+}
+.descriptions2 h1{
+   
+    margin: 0px;
+	color:#026ed4;
+	font-family: disneyfont;
+	font-size: 35px;
+	text-align:center;
+}
+
+
+
+.space2  p{
+	
+	font-size:20px;
+	color: #696969;
+	font-family: Comic Sans MS;
+	text-align:center;
+	
+}
+.space2 p span {
+	color:#DAA520;
+	font-family: disneyfont;
+	
+}
+
+
+
+.card-2:hover .descriptions{
+    left:0px;
+    transition: all .7s ease-in-out;
+    clip-path: circle(75%);
+}
+.card-2:hover{
+    transition: all .5s cubic-bezier(.8,.5,.2,1.4);
+    box-shadow: 0px 2px 3px rgba(0,0,0,.3);
+    transform: scale(.97);
+}
+.card-2:hover img{
+    transition: all .5s cubic-bezier(.8,.5,.2,1.4);
+    transform: scale(1.6) rotate(20deg);
+    filter: blur(3px);
+}
+.card-2 h1{
+   
+    margin: 0px;
+	color:#026ed4;
+	font-family: disneyfont;
+	font-size: 12px;
+}
+.card1-2 p{
+    
+   font-size:14px;
+	color: #041577;
+font-family: Comic Sans MS ;
+
+
+}
+
+.space-text2{
+width:70%;
+  height: 100px;
+	margin: auto;
+}
+
+/*final*/
+
+#prova{
+	
+	height:400px;
+margin:auto;
+}
+.final{
+
+	width:40%;
+  height: 150px;
+	margin: auto;
+	
+	align-items:center;
+}
+
+.final p, .final1 p{
+
+	 font-size:20px;
+	color: #041577;
+    font-family: Comic Sans MS ;
+	text-align:center;
+font-weight:bold;
+
+}
+.final  span {
+	font-size:20px;
+	color:#DAA520;
+	text-align:center;
+	font-family: disneyfont ;
+	
+}
+.final1{
+
+	width:50%;
+  height: 150px;
+	margin: 60px auto;
+	align-items:center;
+	text-align:center;
+	
+	
+}
+.botao {
+    background-color: #041577;
+    color: white;
+    font-family: Comic Sans MS;
+    font-size: 15px;
+    border-radius: 30px;
+    padding: 10px 15px;
+    text-decoration: none;
+	margin:100px auto;
+	
+	
+}
+
+
+/*CONTATO*/
+#contato{
+	
+	margin-top:80px;
+	display:flex;
+	height:150px;
+    background: no-repeat center/cover url('../img/conta.png');
+	width:100%;
+	
+}
+.texth1{
+	display: inline-block;
+	font-family: disneyfont;
+	color:white;
+	font-size: 40px;
+   padding: 10px ;
+   margin-top:35px;
+margin-left:30px;
+
+	
+	
+}
+
+
+
+#contato p {
+	margin: auto;
+	color:white;
+	font-family: Amatic SC ;
+text-decoration: none;
+font-size:25px;
+padding:10px;
+
+}
+#contato a{
+	margin: auto;
+	color:white;
+	font-family: Amatic SC ;
+text-decoration: none;
+font-size:25px;
+padding:10px;
+}	
+
+footer{
+	background: no-repeat center/cover url('../img/fo.png');
+	padding:0;
+	margin-top:5px;
+	height:70px;
+	
+	
+}
+footer p{
+	font-size:20px;
+	float:right;
+	color:white;
+	font-family: Amatic SC ;
+	margin-right:10px;
+	
+}

@@ -1,0 +1,120 @@
+
+.item h2{
+	color:#DAA520;
+	font-family: disneyfont;
+	font-size: 25px;
+	margin-bottom:0;
+	text-align:left;
+	margin-left: 50px;
+	
+}
+.gallery .control-button {
+  color: #041577;
+  color: #041577;
+ 
+}
+
+.gallery .control-button:hover {
+  color: #696969;
+  color: #696969;
+}
+
+/*
+	Theme controls how everything looks in Gallery CSS.
+*/
+.gallery {
+	
+  position: relative;
+ 
+}
+.gallery .item {
+  height: 550px;
+  overflow: hidden;
+ margin:auto;
+  text-align: center;
+  
+  
+}
+.gallery .controls {
+
+ position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  margin-top:-100px;
+ 
+  
+}
+.gallery .control-button {
+ display: inline-block;
+  margin: 0 .02em;
+  font-size: 8em;
+  text-align: center;
+  text-decoration: none;
+  transition: color .1s;
+}
+
+.item h1{
+	
+	margin:50px 0 0 30px;
+	display:flex;
+	padding:10px;
+}
+
+.item .conteudo  p{
+	font-size:16px;
+	color: #696969;
+	font-family: Comic Sans MS;
+	text-align:justify;
+	padding:15px;
+	margin:auto;
+	
+}
+
+.text{
+	margin-top: -50px;
+	margin-left:30px;
+	height: 540px;
+	width:900px;
+	
+}
+
+
+h3{
+	margin-top:80px;
+	margin-bottom:0;
+	padding:0;
+	color:#041577;
+	font-family: disneyfont;
+	font-size: 30px;
+	width:100%;
+	text-align:center;
+}
+
+.img7{
+	height:314px;
+	width:360px;
+	margin-top:30px;
+}
+
+
+.img8{
+	height:314px;
+	width:360px;
+	margin-top:55px;
+}
+
+
+.img3{
+	height:314px;
+	width:360px;
+	margin-top:50px;
+}
+
+.img1, .img2, .img4, .img5, .img6{
+		height:314px;
+	width:360px;
+	margin-top:20px;
+}
+
+
